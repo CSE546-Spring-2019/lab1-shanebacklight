@@ -12,5 +12,5 @@ make
 
 run
 ```
-count <input file> <search string> <output file>
+./demo.sh
 ```
