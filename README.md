@@ -1,16 +1,16 @@
 Lab 1
 
-clean 
+clean exeutable file
 ```
 make clean
 ```
 
-compile
+compile exeutable file
 ```
 make
 ```
 
-run
+each line in the file *demo.sh* represents a test case. You could run those cases together by executing the command below:
 ```
 ./demo.sh
 ```
