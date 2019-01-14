@@ -1,7 +1,7 @@
 ### Lab 1
 
 #### Glimpse
-Exploit KMP algorithm to match the target string in order to reduce IO.
+*count.c* counts file size and number of matches given a string. It exploits KMP algorithm to match the target string in order to reduce IO.
 
 #### Run Instruction
 clean exeutable file
