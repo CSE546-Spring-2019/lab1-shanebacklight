@@ -52,7 +52,7 @@ int main(int argc, char* argv[]){
     // count file size
     size_t fileSize = 0;
     // count matched string in the input file
-    int match = 0;
+    size_t match = 0;
     // cache recent content read from file
     char buffer[MAXBUFFERSIZE];
     // number of items read from the file
@@ -86,14 +86,14 @@ int main(int argc, char* argv[]){
 
     fclose(fin);
     printf("Size of fize is %zu\n", fileSize);
-    printf("Number of matches: %d\n", match);
+    printf("Number of matches: %zu\n", match);
     FILE* fout = fopen(outFileName, "w");
     if(fout==NULL){
         printf("fail to open the output file %s\n", inFileName);
         exit(0);
     }
     fprintf(fout, "Size of fize is %zu\n", fileSize);
-    fprintf(fout, "Number of matches: %d\n", match);
+    fprintf(fout, "Number of matches: %zu\n", match);
     fclose(fout);
     free(presuf);
 
